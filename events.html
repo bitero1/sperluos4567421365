@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>رویدادها - کافه اسپرلوس</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --jade:#2e8b57;
+  --jade-dark:#246b45;
+  --brown:#6b3f2b;
+  --light:#f5f1eb;
+  font-family:'Vazirmatn',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh;
+  color:#fff;
+  background:linear-gradient(120deg,rgba(46,139,87,.65),rgba(107,63,43,.65)),
+    url("https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1950&q=80")
+    center/cover no-repeat;
+  backdrop-filter: blur(4px);
+}
+.app{max-width:1000px;margin:0 auto;padding:24px}
+
+/* Header */
+header{
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:16px;padding:16px 22px;
+  background:rgba(255,255,255,0.08);
+  border-radius:16px;
+  backdrop-filter:blur(12px);
+  box-shadow:0 6px 16px rgba(0,0,0,.25);
+  margin-bottom:24px;
+}
+.logo{
+  width:60px;height:60px;border-radius:14px;
+  background:linear-gradient(180deg,var(--jade),var(--jade-dark));
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;font-weight:700;color:#fff;
+}
+.brand h1{margin:0;font-size:24px;font-weight:700;color:var(--light)}
+.brand p{margin:4px 0 0;font-size:14px;color:#e1d5c6}
+
+/* Nav */
+nav{margin:18px 0;display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+nav a{
+  text-decoration:none;padding:8px 18px;border-radius:999px;
+  background:#fff;color:#333;font-weight:600;
+  box-shadow:0 1px 3px rgba(0,0,0,.1);
+  transition:all .3s;
+}
+nav a:hover, nav a.active{
+  background:linear-gradient(90deg,var(--jade),var(--jade-dark));
+  color:#fff;transform:translateY(-2px);
+}
+
+/* Events */
+.events-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:18px;
+}
+.event-card{
+  background:rgba(255,255,255,0.12);
+  border-radius:14px;
+  padding:18px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  transition:transform .3s;
+}
+.event-card:hover{transform:translateY(-6px)}
+.event-card h3{margin:0 0 10px;font-size:20px;color:#ffe4b5}
+.event-card p{font-size:14px;color:#f0f0f0;margin-bottom:10px}
+.event-time{font-size:13px;color:#cfcfcf}
+
+/* Footer */
+footer{
+  margin-top:40px;padding:16px;text-align:center;
+  font-size:13px;color:#ddd;border-top:1px solid rgba(255,255,255,.3)
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+<header>
+  <div class="logo">🎉</div>
+  <div class="brand">
+    <h1>رویدادهای اسپرلوس</h1>
+    <p>جمعی دوستانه همراه با قهوه و کتاب</p>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">خانه</a>
+  <a href="menu.html">منو</a>
+  <a href="library.html">کتابخانه</a>
+  <a href="events.html" class="active">رویدادها</a>
+  <a href="about.html">درباره ما</a>
+  <a href="contact.html">تماس با ما</a>
+</nav>
+
+<div class="events-grid">
+
+  <div class="event-card">
+    <h3>📖 شاهنامه‌خوانی</h3>
+    <p>گردهمایی هفتگی برای خواندن و تحلیل شاهنامه فردوسی.</p>
+    <div class="event-time">هر پنج‌شنبه ساعت ۱۸</div>
+  </div>
+
+  <div class="event-card">
+    <h3>📚 کتاب‌خوانی گروهی</h3>
+    <p>معرفی و بررسی یک کتاب توسط اعضای کافه.</p>
+    <div class="event-time">شنبه‌ها ساعت ۱۷</div>
+  </div>
+
+  <div class="event-card">
+    <h3>🕵️ بازی مافیا</h3>
+    <p>هیجان و استراتژی در دورهمی دوستانه.</p>
+    <div class="event-time">دوشنبه‌ها ساعت ۲۰</div>
+  </div>
+
+  <div class="event-card">
+    <h3>🎲 بازی اولون</h3>
+    <p>یک شب پر از سرگرمی و رقابت دوستانه با قهوه‌های ویژه.</p>
+    <div class="event-time">چهارشنبه‌ها ساعت ۱۹</div>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 کافه اسپرلوس - رویدادها و دورهمی‌های فرهنگی و دوستانه
+</footer>
+
+</div>
+</body>
+</html>

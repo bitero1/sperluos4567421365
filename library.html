@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>کتابخانه - کافه اسپرلوس</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --jade:#2e8b57;
+  --jade-dark:#246b45;
+  --brown:#6b3f2b;
+  --light:#f5f1eb;
+  font-family:'Vazirmatn',sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh;
+  color:#fff;
+  background:linear-gradient(120deg,rgba(46,139,87,.65),rgba(107,63,43,.65)),
+    url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1950&q=80")
+    center/cover no-repeat;
+  backdrop-filter: blur(4px);
+}
+.app{max-width:1000px;margin:0 auto;padding:24px}
+
+/* Header */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:16px;
+  padding:16px 22px;
+  background:rgba(255,255,255,0.08);
+  border-radius:16px;
+  backdrop-filter:blur(12px);
+  box-shadow:0 6px 16px rgba(0,0,0,.25);
+  margin-bottom:24px;
+}
+.logo{
+  width:60px;height:60px;border-radius:14px;
+  background:linear-gradient(180deg,var(--jade),var(--jade-dark));
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;font-weight:700;color:#fff;
+}
+.brand h1{margin:0;font-size:24px;font-weight:700;color:var(--light)}
+.brand p{margin:4px 0 0;font-size:14px;color:#e1d5c6}
+
+/* Nav */
+nav{margin:18px 0;display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+nav a{
+  text-decoration:none;
+  padding:8px 18px;
+  border-radius:999px;
+  background:#fff;
+  color:#333;
+  font-weight:600;
+  box-shadow:0 1px 3px rgba(0,0,0,.1);
+  transition:all .3s;
+}
+nav a:hover, nav a.active{
+  background:linear-gradient(90deg,var(--jade),var(--jade-dark));
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+/* Sections */
+section{
+  background:rgba(255,255,255,0.1);
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  margin-bottom:24px;
+}
+h2{margin-bottom:12px;font-size:22px;color:#ffebcd}
+ul{list-style:none;padding:0}
+ul li{padding:6px 0;font-size:15px;color:#f0f0f0;border-bottom:1px dashed rgba(255,255,255,.3)}
+ul li:last-child{border-bottom:none}
+
+/* Footer */
+footer{
+  margin-top:40px;
+  padding:16px;
+  text-align:center;
+  font-size:13px;
+  color:#ddd;
+  border-top:1px solid rgba(255,255,255,.3)
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+<header>
+  <div class="logo">📚</div>
+  <div class="brand">
+    <h1>کتابخانه اسپرلوس</h1>
+    <p>کتاب بخوان، قهوه بنوش، زندگی کن ☕</p>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">خانه</a>
+  <a href="menu.html">منو</a>
+  <a href="library.html" class="active">کتابخانه</a>
+  <a href="events.html">رویدادها</a>
+  <a href="about.html">درباره ما</a>
+  <a href="contact.html">تماس با ما</a>
+</nav>
+
+<section>
+  <h2>📖 رمان</h2>
+  <ul>
+    <li>بینوایان – ویکتور هوگو</li>
+    <li>جنایت و مکافات – داستایوفسکی</li>
+    <li>صد سال تنهایی – گابریل گارسیا مارکز</li>
+    <li>کلیدر – محمود دولت‌آبادی</li>
+  </ul>
+</section>
+
+<section>
+  <h2>✍️ شعر</h2>
+  <ul>
+    <li>دیوان حافظ</li>
+    <li>شاهنامه – فردوسی</li>
+    <li>مثنوی معنوی – مولوی</li>
+    <li>سفر به گرای ۲۷۰ درجه – احمد محمود</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🧠 فلسفه و اندیشه</h2>
+  <ul>
+    <li>تاریخ فلسفه غرب – برتراند راسل</li>
+    <li>چنین گفت زرتشت – نیچه</li>
+    <li>جمهوری – افلاطون</li>
+    <li>نقد عقل محض – کانت</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🌱 توسعه فردی</h2>
+  <ul>
+    <li>انسان در جستجوی معنا – ویکتور فرانکل</li>
+    <li>چه کسی پنیر مرا جابجا کرد؟ – اسپنسر جانسون</li>
+    <li>هفت عادت مردمان مؤثر – استیفن کاوی</li>
+    <li>اثر مرکب – دارن هاردی</li>
+  </ul>
+</section>
+
+<footer>
+  © 2025 کافه اسپرلوس - کتابخانه برای دوستداران مطالعه و قهوه
+</footer>
+
+</div>
+</body>
+</html>

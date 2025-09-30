@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>خانه - کافه اسپرلوس</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --jade:#2e8b57;
+  --jade-dark:#246b45;
+  --brown:#6b3f2b;
+  --light:#f5f1eb;
+  font-family:'Vazirmatn',sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh;
+  color:#fff;
+  background:linear-gradient(120deg,rgba(46,139,87,.6),rgba(107,63,43,.6)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1950&q=80")
+    center/cover no-repeat;
+  backdrop-filter: blur(4px);
+}
+.app{max-width:1000px;margin:0 auto;padding:24px}
+
+/* Header */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:16px;
+  padding:16px 22px;
+  background:rgba(255,255,255,0.08);
+  border-radius:16px;
+  backdrop-filter:blur(12px);
+  box-shadow:0 6px 16px rgba(0,0,0,.25);
+  margin-bottom:24px;
+}
+.logo{
+  width:60px;height:60px;border-radius:14px;
+  background:linear-gradient(180deg,var(--jade),var(--jade-dark));
+  display:flex;align-items:center;justify-content:center;
+  font-size:28px;font-weight:700;color:#fff;
+}
+.brand h1{margin:0;font-size:24px;font-weight:700;color:var(--light)}
+.brand p{margin:4px 0 0;font-size:14px;color:#e1d5c6}
+
+/* Nav */
+nav{margin:18px 0;display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+nav a{
+  text-decoration:none;
+  padding:8px 18px;
+  border-radius:999px;
+  background:#fff;
+  color:#333;
+  font-weight:600;
+  box-shadow:0 1px 3px rgba(0,0,0,.1);
+  transition:all .3s;
+}
+nav a:hover, nav a.active{
+  background:linear-gradient(90deg,var(--jade),var(--jade-dark));
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+/* Content */
+section{background:rgba(255,255,255,0.1);padding:20px;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,0.25);margin-bottom:24px}
+h2{margin-bottom:12px;font-size:22px;color:#ffebcd}
+p{line-height:1.7;color:#f0f0f0}
+
+/* Footer */
+footer{margin-top:40px;padding:16px;text-align:center;font-size:13px;color:#ddd;border-top:1px solid rgba(255,255,255,.3)}
+</style>
+</head>
+<body>
+<div class="app">
+
+<header>
+  <div class="logo">☕</div>
+  <div class="brand">
+    <h1>کافه اسپرلوس</h1>
+    <p>پاتوقی برای قهوه و کتاب 📚</p>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html" class="active">خانه</a>
+  <a href="menu.html">منو</a>
+  <a href="library.html">کتابخانه</a>
+  <a href="events.html">رویدادها</a>
+  <a href="about.html">درباره ما</a>
+  <a href="contact.html">تماس با ما</a>
+</nav>
+
+<section>
+  <h2>خوش آمدید به کافه اسپرلوس</h2>
+  <p>اینجا جاییه برای یک فنجان قهوه داغ و ورق زدن کتابی که دلت می‌خواد.  
+  ما ترکیبی از آرامش، عطر قهوه تازه، و حال‌و‌هوای فرهنگی رو برات فراهم کردیم.</p>
+</section>
+
+<section>
+  <h2>ویژگی‌های ما</h2>
+  <p>☕ انواع قهوه‌ها و نوشیدنی‌های خاص  
+  📚 کتابخانه‌ی کوچک برای مطالعه  
+  🎶 موسیقی ملایم برای آرامش بیشتر  
+  🎉 رویدادهای فرهنگی و هنری</p>
+</section>
+
+<footer>
+  © 2025 کافه اسپرلوس - تمام حقوق محفوظ است.
+</footer>
+
+</div>
+</body>
+</html>
